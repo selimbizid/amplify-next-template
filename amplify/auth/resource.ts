@@ -8,4 +8,17 @@ export const auth = defineAuth({
   loginWith: {
     email: true,
   },
+
+  userAttributes: {
+    preferredUsername: {
+      mutable: true,
+      required: false,
+    },
+    "custom:started_free_trial": {
+      dataType: "DateTime",
+      mutable: true,
+    },
+  },
+
+  groups: ["VIEWERS", "EDITORS", "ADMINISTRATORS"],
 });
