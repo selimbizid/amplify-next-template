@@ -13,11 +13,7 @@ export const auth = defineAuth({
     preferredUsername: {
       mutable: true,
       required: false,
-    },
-    "custom:started_free_trial": {
-      dataType: "DateTime",
-      mutable: true,
-    },
+    }
   },
 
   groups: ["VIEWERS", "EDITORS", "ADMINISTRATORS"],
