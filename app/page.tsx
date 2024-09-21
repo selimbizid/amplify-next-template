@@ -41,7 +41,7 @@ export default function App() {
     <Authenticator>
       {({ signOut, user }) => (
         <main>
-          <h1>What do I have to do?</h1>
+          <h1>{user?.signInDetails?.loginId}'s todos</h1>
           <button onClick={createTodo}>+ new</button>
           <ul>
             {todos.map((todo) => (
@@ -50,6 +50,7 @@ export default function App() {
               </li>
             ))}
           </ul>
+          <button onClick={signOut}>Sign Out</button>
           <div>
             <a href="https://docs.amplify.aws/nextjs/start/quickstart/nextjs-app-router-client-components/">
               Review next steps of this tutorial.
