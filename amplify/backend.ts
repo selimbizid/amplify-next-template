@@ -6,6 +6,5 @@ const backend = defineBackend({
   auth,
   data,
 });
-
-const { cfnIdentityPool } = backend.auth.resources.cfnResources;
-cfnIdentityPool.allowUnauthenticatedIdentities = false;
+//const { cfnIdentityPool } = backend.auth.resources.cfnResources;
+//cfnIdentityPool.allowUnauthenticatedIdentities = false;
